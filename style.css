@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 30vh;
+  background-color: #f2f2f2;
+}
+
+.header h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+.flexbox-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexbox-container button {
+  margin: 16px;
+}
+.flexbox-container select {
+  margin: 16px;
+}
