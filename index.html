@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <title>Button Color Change</title>
+    <head>
+        <link rel='stylesheet' href='style.css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class='header'>
+            <h1>Button Color Changer</h1>
+            <p>Select different colors to color buttons accordingly</p>
+            <select class='form-select' onchange='colorChange(this)'>
+                <option disabled selected>Color</option>
+                <option value='Red'>Red</option>
+                <option value='Green'>Green</option>
+                <option value='Blue'>Blue</optionn>
+                <option value='Random'>Random</option>
+            </select>
+        </div>
+        <div class='flexbox-container'>
+            <button id='red-button' class='btn btn-danger'>Red</button>
+            <button id='green-button' class='btn btn-success'>Green</button>
+            <button id='blue-button' class='btn btn-primary'>Blue</button>
+        </div>
+        <div class='flexbox-container'>
+            
+            <button id='reset-button' class='btn btn-warning' onclick='resetColors()'>Reset</button>
+        </div>
+    </body>
+    <script src='script.js'></script>
+</html>
