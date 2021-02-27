@@ -4,7 +4,7 @@ const all_buttons = document.getElementsByTagName('button');
 const colorList = ['btn-primary', 'btn-danger', 'btn-warning', 'btn-success',]
 const randomColor = colorList[Math.floor(Math.random()*colorList.length)];
 
-
+//array of buttons gets iterated and for each iteration last class item (btn-whatever) gets removed and right class gets added
 function buttonRed() {
     for (let i=0; i < all_buttons.length; i++) {
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
@@ -31,6 +31,7 @@ function buttonRandom() {
     }
 };
 
+//referring from colorChange(this) from onchange
 function colorChange(selectedInput) {
     if (selectedInput.value === 'Red') {
         buttonRed()
