@@ -1,3 +1,3 @@
-#demo
+#Change Color of Button
 
-description
+Change or mix the colors of the buttons by selecting your desired color 
